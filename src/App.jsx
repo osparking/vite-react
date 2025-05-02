@@ -6,8 +6,10 @@ function App() {
     backgroundColor: "purple", color:
       "ivory"
   }
+  const imageUrl = "https://placehold.co/120x80";
   return (
     <>
+      <img src={imageUrl} alt="위치/크기 지정 영상" />
       <p>우편번호: {zipCode}</p>
       <button style={buttonStyle}>클릭해!</button>
       <p>우편번호: {zipCode}</p>
