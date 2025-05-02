@@ -5,7 +5,8 @@ function App() {
   return (
     <>
       { greet }
-      <p>여러분 모두...</p>
+      {2000 + 25}년
+      <p className='card'>여러분 모두...</p>
     </>
   )
 }
