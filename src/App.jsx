@@ -3,9 +3,10 @@ import './App.css';
 function App() {
   const greet = <h1>안녕?</h1>;
   return (
-    <div>
+    <>
       { greet }
-    </div>
+      <p>여러분 모두...</p>
+    </>
   )
 }
 
