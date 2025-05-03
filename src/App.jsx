@@ -52,6 +52,19 @@ function App() {
           ))}
         </div>
       </section>
+
+      {/* 연락처 구획 */}
+      <section id='contact' className='contact-section'>
+        <h2>연락처</h2>
+        <p>저에게 연락하려면 이메일을 주십시오. 
+          <a href="mailto:jbpark03@gmail.com">jbpark03@gmail.com</a>.</p>
+      </section>
+
+      {/* 바닥글 구획 */}
+      <footer className='footer'>
+        <p>2025. 모든 권리는 저자가 보유함.</p>
+      </footer>
+
     </div>
   );
 }
