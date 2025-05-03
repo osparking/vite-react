@@ -22,10 +22,19 @@ function App() {
   ]
 
   return (
-    <>
-      <h1>여러분 모두...</h1>
-    </>
-  )
+    <div className='App'>
+      {/* 헤더 구획 */}
+      <header className='header'>
+        <h1>{name}</h1>
+        <p>{profession}</p>
+        <nav>
+          <a href="#about">소개</a>
+          <a href="#project">프로젝트</a>
+          <a href="#contact">연락</a>
+        </nav>
+      </header>
+    </div>
+  );
 }
 
 export default App
