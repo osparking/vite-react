@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './component/Header';
 
 function App() {
   const projects = [
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className='App'>
       {/* 헤더 구획 */}
+      <Header />
 
       {/* 소개 구획 */}
       <section id='about' className='about-section'>
