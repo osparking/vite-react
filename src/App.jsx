@@ -48,6 +48,8 @@ function App() {
             <div key={index} className='project-item'>
               <h3>{project.title}</h3>
               <h3>{project.description}</h3>
+              <a href={project.link} target='_blank' 
+              rel="noopener noreferrer">프로젝트 보기</a>
             </div>
           ))}
         </div>
