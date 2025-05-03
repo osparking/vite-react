@@ -2,3 +2,10 @@ body {
   margin: 0;
   font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, sans-serif;
 }
+
+/* 소개 구획 */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
