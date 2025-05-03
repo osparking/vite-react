@@ -12,9 +12,13 @@ const greetCheckingTime = (isMorning) => {
   return msg;
 }
 
+const alertBox = function(msg) {
+  return <div style={{color: "red"}}>{msg}</div>;
+}
+
 const selectiveDiv = (flag, msg) => {
   if (flag) {
-    return <div>{msg}</div>;
+    return alertBox(msg);
   } 
   return null;
 }
