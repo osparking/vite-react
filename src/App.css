@@ -42,3 +42,11 @@ h2 {
 .contact-section a {
   color: blue;
 }
+
+/* 바닥글 구획 */
+.footer {
+  background-color: #282c34  ;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
