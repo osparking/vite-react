@@ -10,6 +10,11 @@ body {
   background-color: #f4f4f4;
 }
 
+.header nav a {
+  margin: 0 10px;
+  color: white;
+}
+
 h2 {
   margin-bottom: 20px;
 }
