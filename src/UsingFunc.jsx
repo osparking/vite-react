@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const printLastname = function (lastname) {
   return <p>당신의 성씨는: {lastname}</p>
@@ -12,13 +12,18 @@ const greetCheckingTime = (isMorning) => {
   return msg;
 }
 
-const UsingFunc = () => {
-  const names = ['김', '이', '박'];
-  const isMorning = (new Date()).getHours() < 12;
+const selectiveDiv = (flag, msg) => {
+  if (flag) {
+    return <div>{msg}</div>;
+  } 
+  return null;
+}
 
+const UsingFunc = () => {
   return (
     <div>
-      <p>{greetCheckingTime(isMorning)}</p>
+      {selectiveDiv(true, "비오니까 우산 가지고 나가")}
+      {selectiveDiv(false, "싫으면, 관두고 :-)")}
     </div>
   )
 }
