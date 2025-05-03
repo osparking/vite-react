@@ -31,3 +31,14 @@ h2 {
 .project-list .project-item a {
   color: blue;
 }
+
+/* 연락처 구획 */
+.contact-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;  
+}
+
+.contact-section a {
+  color: blue;
+}
