@@ -1,8 +1,6 @@
 import './App.css';
 
 function App() {
-  const name = "범호랑이";
-  const profession = "자바-리액트 풀스택 개발자"
   const projects = [
     {
       title: "오픈 소스 파킹(Open Source Parking)",
@@ -24,15 +22,7 @@ function App() {
   return (
     <div className='App'>
       {/* 헤더 구획 */}
-      <header className='header'>
-        <h1>{name}</h1>
-        <p>{profession}</p>
-        <nav>
-          <a href="#about">소개</a>
-          <a href="#project">프로젝트</a>
-          <a href="#contact">연락</a>
-        </nav>
-      </header>
+
       {/* 소개 구획 */}
       <section id='about' className='about-section'>
         <h2>자기 소개</h2>
