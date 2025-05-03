@@ -39,6 +39,19 @@ function App() {
         <p>안녕하세요? 제 이름은 {name}이고, 저는 직업 군인이었으나 
           전역 후 자바-리액트 웹앱 개발에 진심인 남성입니다.</p>
       </section>
+
+      {/* 프로젝트 구획 */}
+      <section id='project' className='project-section'>
+        <h2>프로젝트</h2>
+        <div className='project-list'>
+          {projects.map((project, index) => (
+            <div key={index} className='project-item'>
+              <h3>{project.title}</h3>
+              <h3>{project.description}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
