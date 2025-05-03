@@ -25,8 +25,11 @@ const selectiveDiv = (flag, msg) => {
 
 const UsingFunc = () => {
   return (
+    // 여기 주석이 올 수 있고,
     <div>
-      {selectiveDiv(true, "비오니까 우산 가지고 나가")}
+      {/* 여기는 div 안 이므로 JSX 방법으로 주석을 달라.
+        줄을 바꾸면 다중 행 주석이 된다. */}
+      {selectiveDiv(true, "비오니까 우산 지참해!")}
       {selectiveDiv(false, "싫으면, 관두고 :-)")}
     </div>
   )
