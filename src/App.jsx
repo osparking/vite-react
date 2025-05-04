@@ -1,26 +1,11 @@
 import './App.css';
 import About from './component/About';
+import Contact from './component/Contact';
+import Footer from './component/Footer';
 import Header from './component/Header';
+import ProjectList from './component/ProjectList';
 
 function App() {
-  const projects = [
-    {
-      title: "오픈 소스 파킹(Open Source Parking)",
-      description: "주차관제 제어체계 오픈 소스 프로젝트",
-      link: "https://github.com/osparking/OsParking_src"
-    },
-    {
-      title: "애완동물 병원 웹 앱 - 전단",
-      description: "자바, 리액트, 마리아DB 사용 개발 프로젝트",
-      link: "https://github.com/osparking/pet-care-front-react-java"
-    },
-    {
-      title: "애완동물 병원 웹 앱 - 후단",
-      description: "자바, 리액트, 마리아DB 사용 개발 프로젝트",
-      link: "https://github.com/osparking/pet-care-react"
-    }
-  ]
-
   return (
     <div className='App'>
       {/* 헤더 구획 */}
@@ -30,34 +15,16 @@ function App() {
       <About />
 
       {/* 프로젝트 구획 */}
-      <section id='project' className='project-section'>
-        <h2>프로젝트</h2>
-        <div className='project-list'>
-          {projects.map((project, index) => (
-            <div key={index} className='project-item'>
-              <h3>{project.title}</h3>
-              <h3>{project.description}</h3>
-              <a href={project.link} target='_blank' 
-              rel="noopener noreferrer">프로젝트 보기</a>
-            </div>
-          ))}
-        </div>
-      </section>
+      <ProjectList />
 
       {/* 연락처 구획 */}
-      <section id='contact' className='contact-section'>
-        <h2>연락처</h2>
-        <p>저에게 연락하려면 이메일을 주십시오. 
-          <a href="mailto:jbpark03@gmail.com">jbpark03@gmail.com</a>.</p>
-      </section>
+      <Contact />
 
       {/* 바닥글 구획 */}
-      <footer className='footer'>
-        <p>2025. 모든 권리는 저자가 보유함.</p>
-      </footer>
+      <Footer />
 
     </div>
   );
 }
 
-export default App
+export default App;

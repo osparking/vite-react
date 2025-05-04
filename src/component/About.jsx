@@ -1,6 +1,7 @@
 import React from 'react'
 
 const About = () => {
+  const name = "범호랑이";
   return (
     <section id='about' className='about-section'>
       <h2>자기 소개</h2>
